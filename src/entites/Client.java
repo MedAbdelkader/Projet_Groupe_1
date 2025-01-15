@@ -7,6 +7,7 @@ public class Client {
     private int age;
     private String email;
     private List<Commande> commandes;
+    private String prenom;
 
     // Constructeur paramétré
     public Client(String nom, String email) {
