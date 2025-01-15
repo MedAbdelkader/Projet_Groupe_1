@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Client {
     private String nom;
-
+    private int age;
     private String email;
     private List<Commande> commandes;
 
