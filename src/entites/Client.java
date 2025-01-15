@@ -8,7 +8,11 @@ public class Client {
     private String email;
     private List<Commande> commandes;
     private String prenom;
+
     private String adresse;
+
+    private int telephone ;
+
 
     // Constructeur paramétré
     public Client(String nom, String email) {
