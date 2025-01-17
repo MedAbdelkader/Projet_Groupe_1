@@ -52,4 +52,14 @@ public class Supplier {
     public int hashCode() {
         return Objects.hash(getId(), getNom(), getPrenom(), getAdresse());
     }
+
+    @Override
+    public String toString() {
+        return "Supplier{" +
+                "id=" + id +
+                ", nom='" + nom + '\'' +
+                ", prenom='" + prenom + '\'' +
+                ", adresse='" + adresse + '\'' +
+                '}';
+    }
 }

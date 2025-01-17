@@ -2,7 +2,7 @@ package entites;
 
 public class Depot {
 
-    private int quantity;
+    private int quantity_of_products;
     private Produit product;
 
     private int id;
