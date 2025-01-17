@@ -1,5 +1,7 @@
 package entites;
 
+import java.util.Objects;
+
 public class Supplier {
     public int id;
     public String nom;
@@ -37,5 +39,17 @@ public class Supplier {
 
     public void setAdresse(String adresse) {
         this.adresse = adresse;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Supplier supplier = (Supplier) o;
+        return getId() == supplier.getId() && Objects.equals(getNom(), supplier.getNom()) && Objects.equals(getPrenom(), supplier.getPrenom()) && Objects.equals(getAdresse(), supplier.getAdresse());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId(), getNom(), getPrenom(), getAdresse());
     }
 }
